@@ -2,7 +2,7 @@ import pygame, sys
 from pygame.locals import *
 
 
-class Input:
+class UserInput:
 
     def __init__(self, game):
         self.game = game

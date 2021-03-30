@@ -1,21 +1,21 @@
 import pygame
-from src.window import Window
-from src.input import Input
-from src.world import World
-from src.renderer import renderer
-from src.maploader import Maploader
+from window import Window
+from userInput import UserInput
+from world import World
+from renderer import renderer
+from maploader import Maploader
 
 class Game:
 
     def __init__(self):
         self.window = Window()
-        self.input = Input(self)
+        self.UserInput = UserInput(self)
         self.world = World(self)
         self.renderer = renderer(self)
 
 
     def update(self):
-        self.input.update()
+        self.UserInput.update()
         self.world.update()
         self.renderer.update()
         

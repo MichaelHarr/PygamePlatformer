@@ -1,7 +1,7 @@
 import pygame
-from src.player import Player
-from src.block import Block
-from src.maploader import Maploader
+from player import Player
+from block import Block
+from maploader import Maploader
 
 class World:
 
