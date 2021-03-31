@@ -1,6 +1,6 @@
 import pygame
 
-class renderer:
+class Renderer:
 
     def __init__(self, game):
         self.game = game

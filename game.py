@@ -1,9 +1,9 @@
 import pygame
-from window import Window
-from userInput import UserInput
-from world import World
-from renderer import renderer
-from maploader import Maploader
+from data.window import Window
+from data.userInput import UserInput
+from data.world import World
+from data.renderer import Renderer
+from data.maploader import Maploader
 
 class Game:
 
@@ -11,7 +11,7 @@ class Game:
         self.window = Window()
         self.UserInput = UserInput(self)
         self.world = World(self)
-        self.renderer = renderer(self)
+        self.renderer = Renderer(self)
 
 
     def update(self):
